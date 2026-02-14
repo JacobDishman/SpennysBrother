@@ -11,6 +11,17 @@ namespace Spenny_sBrother.Controllers
             return View();
         }
 
+        public IActionResult GetToKnowJoel()
+        {
+            return View();
+        }
+
+        public IActionResult MovieCollection()
+        {
+            var movies = MovieData.GetMovies();
+            return View(movies);
+        }
+
         public IActionResult Privacy()
         {
             return View();
